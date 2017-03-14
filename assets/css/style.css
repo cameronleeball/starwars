@@ -1,0 +1,64 @@
+
+
+#splash {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-image: url(../images/splash.png);
+	z-index: 0;
+}
+
+.col-md-12{
+	height: 800px;
+	width: 100%;
+}
+
+#chars {
+	display: inline-flex;
+	list-style-type: none;
+	z-index: 2;
+	position: relative;
+}
+
+.char {
+	display: none;
+	padding: 15px;
+}
+
+#banner-image {
+	position: absolute;
+	height: 800px;
+	width: 100%;
+	background-image: url(../images/farfar.png);
+	margin: auto;
+	background-repeat: no-repeat;
+	z-index: 2;
+}
+
+#char-stat {
+	display: none;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	z-index: 2;
+}
+
+#enemies {
+	display: inline-flex;
+	list-style-type: none;
+	z-index: 2;
+	position: relative;
+}
+
+.enemy {
+	display: none;
+	padding: 15px;
+}
+
+#enemy-stat {
+	display: none;
+	position: absolute;
+	top: 100px;
+	right: 15px;
+	z-index: 2;
+}
