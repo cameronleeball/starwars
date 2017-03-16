@@ -12,53 +12,61 @@
 <body>
 	<div id="splash"></div>
 	<div id="banner-image"></div>
-	<div class="row">
-		<div class="col-8-md">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-8-md">
+			</div>
+			<div class="col-4-md">
+				<div class="row">
+					<div class="panel panel-default" id="char-stat"> 
+						<ul id="char-stats">
+							<li >HP: <span id="char-hp"></span></li>
+							<li >Attack Points: <span id="char-ap"></span></li>
+							<li >Counter Attack: <span id="char-cp"></span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="panel panel-default" id="enemy-stat"> 
+						<ul id="enemy-stats">
+							<li>HP: <span id="enemy-hp"></span></li>
+							<li>Attack Points: <span id="enemy-ap"></span></li>
+							<li>Counter Attack: <span id="enemy-cp"></span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="col-4-md">
-			<div class="row">
-				<div class="panel panel-default" id="char-stat"> 
-					<ul id="char-stats">
-						<li >HP: <span id="char-hp"></span></li>
-						<li >Attack Points: <span id="char-ap"></span></li>
-						<li >Counter Attack: <span id="char-cp"></span></li>
+		<div class="row">
+			<div class="col-12-md">
+				<div class="row">
+					<ul id="chars">
+						<li><img class="char" id="luke" src="assets/images/luke.png" alt="Luke Skywalker" data-char="luke"></li>
+						<li><img class="char" id="obiwan" src="assets/images/obiwan.png" alt="Obi-Wan Kenobi" data-char="obiwan"></li>
+						<li><img class="char" id="lando" src="assets/images/lando.png" alt="Lando Calrissian" data-char="lando"></li>
+						<li><img class="char" id="jarjar" src="assets/images/jarjar.png" alt="Jar Jar Binks" data-char="jarjar"></li>
 					</ul>
 				</div>
 			</div>
+		</div>
+		<div class="row" id="attack-row">
+			<div class="col-4-md"></div>
+			<div class="col-4-md">
+				<button id="attack-btn" class="btn btn-danger" type="button">Attack!</button>
+				<div class="col-4-md"></div>
+			</div>	
 			<div class="row">
-				<div class="panel panel-default" id="enemy-stat"> 
-					<ul id="enemy-stats">
-						<li >HP: <span id="enemy-hp"></span></li>
-						<li >Attack Points: <span id="enemy-ap"></span></li>
-						<li>Counter Attack: <span id="enemy-cp"></span></li>
-					</ul>
+				<div class="col-12-md">
+					<div class="row">
+						<ul id="enemies">
+							<li><img class="enemy" id="stormtroopers" src="assets/images/stormtroopers.png" alt="Stormtrooper Squad" data-char="stormtroopers"></li>
+							<li><img class="enemy" id="bfett" src="assets/images/bfett.png" alt="Boba Fett" data-char="bfett"></li>
+							<li><img class="enemy" id="palpatine" src="assets/images/palpatine.png" alt="Emperor Palpatine" data-char="palpatine"></li>
+							<li><img class="enemy" id="eviljarjar" src="assets/images/jarjar.png" alt="Jar Jar Binks" data-char="eviljarjar"></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="row">
-		<div class="col-12-md">
-			<div class="row">
-				<ul id="chars">
-					<li><img class="char" id="luke" src="assets/images/luke.png" alt="Luke Skywalker" data-char="luke"></li>
-					<li><img class="char" id="obiwan" src="assets/images/obiwan.png" alt="Obi-Wan Kenobi" data-char="obiwan"></li>
-					<li><img class="char" id="lando" src="assets/images/lando.png" alt="Lando Calrissian" data-char="lando"></li>
-					<li><img class="char" id="jarjar" src="assets/images/jarjar.png" alt="Jar Jar Binks" data-char="jarjar"></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-12-md">
-			<div class="row">
-				<ul id="enemies">
-					<li><img class="enemy" id="stormtroopers" src="assets/images/stormtroopers.png" alt="Stormtrooper Squad" data-char="stormtroopers"></li>
-					<li><img class="enemy" id="obiwan" src="assets/images/obiwan.png" alt="Obi-Wan Kenobi" data-char="obiwan"></li>
-					<li><img class="enemy" id="bfett" src="assets/images/bfett.png" alt="Boba Fett" data-char="bfett"></li>
-					<li><img class="enemy" id="jarjar" src="assets/images/jarjar.png" alt="Jar Jar Binks" data-char="jarjar"></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</body>
-</html>
+	</body>
+	</html>

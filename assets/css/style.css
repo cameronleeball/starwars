@@ -12,6 +12,10 @@
 	height: 800px;
 	width: 100%;
 }
+.col-md-4{
+	height: 300px;
+	width: 33.33%;
+}
 
 #chars {
 	display: inline-flex;
@@ -37,17 +41,34 @@
 
 #char-stat {
 	display: none;
-	position: absolute;
+	position: fixed;
 	top: 15px;
 	right: 15px;
 	z-index: 2;
 }
 
+#attack-row {
+	height: 500px;
+	z-index: 2;
+}
+
+#attack-btn {
+	display: none;
+	position: relative;
+}
+
+#counter-btn {
+	display: none;
+	position: relative;
+}
+
+
+
 #enemies {
 	display: inline-flex;
 	list-style-type: none;
-	z-index: 2;
 	position: relative;
+	z-index: 2;
 }
 
 .enemy {
@@ -57,7 +78,7 @@
 
 #enemy-stat {
 	display: none;
-	position: absolute;
+	position: fixed;
 	top: 100px;
 	right: 15px;
 	z-index: 2;
